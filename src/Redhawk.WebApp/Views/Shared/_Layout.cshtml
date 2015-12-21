@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Redhawk  - @ViewBag.Title</title>
+	<meta charset="utf-8" />
+
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/lib/bootswatch/yeti/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="~/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div id="sidebar">
+		<ul class="nav">
+			<li class="active"><a asp-controller="App" asp-action="Index">Home</a></li>
+			<li><a asp-controller="App" asp-action="About">About</a></li>
+			<li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="wrapper">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<button id="sidebarToggle" class="btn btn-primary">
+							<i class="fa fa-angle-left"></i>
+						</button>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" class="btn btn-sm btn-info">
+							<i class="fa fa-save"></i> Save
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn btn-sm btn-info">
+							<i class="fa fa-print"></i> Print
+						</a>
+					</li>
+				</ul>	
+				<a asp-controller="App" asp-action="Index" class="navbar-brand"> Redhawk</a>
+			</div>
+		</nav>
+		<div id="main" class="container-fluid">
+
+			<div>
+				@RenderBody()
+			</div>
+
+		</div>
+		<div id="footer" class="container-fluid">
+			<div class="nav navbar-inverse navbar-fixed-bottom">
+				<h4 class="text-center">&copy; 2016 Redhawk, LLC.</h4>
+			</div>
+		</div>
+	</div>
+
+	<script src="~/lib/jquery/dist/jquery.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	@RenderSection("Scripts", false);
+	<script src="~/js/script.js"></script>
+</body>
+</html>

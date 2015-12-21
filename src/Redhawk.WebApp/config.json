@@ -1,0 +1,8 @@
+{
+	"AppSettings": {
+		"SiteEmailAddress": "me@icloud.com"
+	},
+	"Data": {
+		"RedhawkContextConnection": "Server=(localdb)\\ProjectsV12;Database=RedhawkDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+	}
+}
