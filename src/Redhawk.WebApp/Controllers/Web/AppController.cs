@@ -35,6 +35,11 @@ namespace Redhawk.WebApp.Controllers.Web
 			return View();
 		}
 
+		public IActionResult People()
+		{
+			return View();
+		}
+
 		[HttpPost]
 		public IActionResult Contact(ContactViewModel model)
 		{
