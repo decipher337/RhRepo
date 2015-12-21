@@ -40,6 +40,11 @@ namespace Redhawk.WebApp.Controllers.Web
 			return View();
 		}
 
+		public IActionResult Inventory()
+		{
+			return View();
+		}
+
 		[HttpPost]
 		public IActionResult Contact(ContactViewModel model)
 		{
